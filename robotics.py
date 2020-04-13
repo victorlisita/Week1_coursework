@@ -68,9 +68,9 @@ class InventoryManager:
     logs(List): Shows a list of all the logs
     users(List): Shows a list of all users
     """
-    def __init__(self, parts: List, bins: List, logs: List, users: List):
+    def __init__(self):
         "Initializes description of the inventory data"
-        self.parts = parts
-        self.bins = bins
-        self.logs = logs
-        self.users = users
+        self.parts = []
+        self.bins = []
+        self.logs = []
+        self.users = []
