@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 class Bin:
     """ Represents a storage bin
     Attrs:
@@ -12,6 +15,7 @@ class Bin:
         self.location = location
         self.part_id = part_id
         self.qty_in_bin = qty_in_bin
+
 
 class Part:
     """ Represents a part
@@ -28,6 +32,7 @@ class Part:
         self.quantity = quantity
         self.bin_id = bin_id
 
+
 class User:
     """ Represents a User's info
     Attrs:
@@ -38,6 +43,7 @@ class User:
         "Initializes description of the student's information"
         self.email = email
         self.student_num = student_num
+
 
 class Log:
     """ Represents a user login
@@ -54,6 +60,7 @@ class Log:
         self.part_id = part_id
         self.quantity = quantity
 
+
 class InventoryManager:
     """ Represents an inventory
     parts(List): Shows a list of all parts
@@ -62,5 +69,8 @@ class InventoryManager:
     users(List): Shows a list of all users
     """
     def __init__(self, parts: List, bins: List, logs: List, users: List):
-        self.parts = List[Part]
-        self.bins =
+        "Initializes description of the inventory data"
+        self.parts = parts
+        self.bins = bins
+        self.logs = logs
+        self.users = users
