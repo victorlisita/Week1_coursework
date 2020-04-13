@@ -21,7 +21,8 @@ class Person:
         "Simulates the person introducing himself"
         return f"Hello, my name is {self.name}"
 
-    def punch(self) -> None:
+    def eat(self) -> None:
+        self.hp = 100
 
 
 

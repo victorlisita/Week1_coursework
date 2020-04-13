@@ -47,3 +47,20 @@ class Log:
         part_id(int): show's the id of the part being logged out
         quantity(int): shows how much of a part was logged out
     """
+    def __init__(self, time: datetime, user_id: int, part_id: int, quantity: int):
+        "Initializes description of the log data"
+        self.time = time
+        self.user_id = user_id
+        self.part_id = part_id
+        self.quantity = quantity
+
+class InventoryManager:
+    """ Represents an inventory
+    parts(List): Shows a list of all parts
+    bins(List): Shows a list of all bins
+    logs(List): Shows a list of all the logs
+    users(List): Shows a list of all users
+    """
+    def __init__(self, parts: List, bins: List, logs: List, users: List):
+        self.parts = List[Part]
+        self.bins =
