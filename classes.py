@@ -22,11 +22,12 @@ class Person:
         return f"Hello, my name is {self.name}"
 
     def punch(self, other_person):
-        "Simulates a person punching someone else"
+        "Simulates a person punching someone else, in which the latter loses health"
         other_person.hp -= 10
         return f"{self.name} punched {other_person.name}"
 
     def eat(self) -> None:
+        "Simulates a person eating food and regaining health"
         self.hp = 100
 
 
