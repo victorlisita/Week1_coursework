@@ -7,5 +7,18 @@ def test_person():
     assert man.strength == 35
     assert man.hp == 100
 
+def test_introduce():
+    man = Person("Mark", 160, 35)
+    assert man.introduce == "Hello, my name is Mark"
 
+def test_punch():
+    man = Person("Mark", 160, 35)
+    other_man = Person('Trevor', 180, 40)
+    assert man.punch == "Mark punched Trevor"
+    assert other_man.hp == 90
 
+def test_eat():
+    man = Person("Mark", 160, 35)
+    man.hp = 50
+    man.eat()
+    assert man.hp == 100

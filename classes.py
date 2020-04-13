@@ -21,9 +21,13 @@ class Person:
         "Simulates the person introducing himself"
         return f"Hello, my name is {self.name}"
 
+    def punch(self, other_person):
+        "Simulates a person punching someone else"
+        other_person.hp -= 10
+        return f"{self.name} punched {other_person.name}"
+
     def eat(self) -> None:
         self.hp = 100
-
 
 
 M = Person('Mark', 150, 50)
